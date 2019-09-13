@@ -15,14 +15,15 @@ makeCacheMatrix <- function(x = matrix()) {
         x
     }
     
-    setInverse <- function(inverse){
+    setInverse <- function(inverse){      ##Set inverse of the matrix
         i <<- inverse
     }
     
-    getInverse <- function(){
+    getInverse <- function(){             ##Get inverse of the matrix
         inver
     }
     
+    ##Return list
     list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 }
 
